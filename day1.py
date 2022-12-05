@@ -3,10 +3,7 @@ elves = list()
 with open('input') as file:
     calories = 0
     for line in file:
-        if line == '':
-            elves.append(calories)
-            break
-        elif line == '\n':
+        if line == '\n':
             elves.append(calories)
             calories = 0  # reset calories if there is '/n' char
         else:
